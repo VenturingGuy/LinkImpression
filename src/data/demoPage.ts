@@ -1,67 +1,59 @@
 import type { Page } from "../types/page";
-import giftalkGif from "../Assets/giftalk.gif";
-import throneIcon from "../Assets/throne_icon.png";
-import twitterIcon from "../Assets/social-twitter.svg";
-import twitchIcon from "../Assets/logo-twitch.svg";
-import youtubeIcon from "../Assets/youtube-icon.svg";
-import discordIcon from "../Assets/discord-icon.svg";
-import tiktokIcon from "../Assets/tiktok.svg";
-import instagramIcon from "../Assets/instagram-logo.svg";
-import facebookIcon from "../Assets/facebook-logo.svg";
+const placeholderAsset = "/favicon.svg";
 
 const demoLinks = [
     {
         href: "https://throne.com/wildwesson",
-        icon: throneIcon,
+        icon: placeholderAsset,
         id: "throne",
         text: "Throne Wishlist",
         title: "Throne",
     },
     {
         href: "https://twitter.com/WildWesson",
-        icon: twitterIcon,
+        icon: placeholderAsset,
         id: "twitter",
         text: "Twitter",
         title: "Twitter",
     },
     {
         href: "https://www.twitch.tv/wildwesson",
-        icon: twitchIcon,
+        icon: placeholderAsset,
         id: "twitch",
         text: "Twitch",
         title: "Twitch",
     },
     {
         href: "https://youtube.com/@WildWesson",
-        icon: youtubeIcon,
+        icon: placeholderAsset,
         id: "youtube",
         text: "YouTube",
         title: "YouTube",
     },
     {
         href: "https://discord.com/invite/dQz3xSFCd",
-        icon: discordIcon,
+        icon: placeholderAsset,
         id: "discord",
         text: "Discord Server!",
         title: "Discord",
     },
     {
         href: "https://www.tiktok.com/@wildwessonwyatt",
-        icon: tiktokIcon,
+        icon: placeholderAsset,
         id: "tiktok",
         text: "TikTok",
         title: "TikTok",
     },
     {
         href: "https://www.instagram.com/wildwessontv/",
-        icon: instagramIcon,
+        icon: placeholderAsset,
         id: "instagram",
         text: "Instagram",
         title: "Instagram",
     },
     {
         href: "https://www.facebook.com/profile.php?id=61566549357444",
-        icon: facebookIcon,
+        icon: placeholderAsset,
         id: "facebook",
         text: "Facebook",
         title: "Facebook",
@@ -78,7 +70,7 @@ export const demoPage: Page = {
     },
     blocks: [
         {
-            avatar: giftalkGif,
+            avatar: placeholderAsset,
             blockType: "Header",
             headerLinks: demoLinks,
             id: "header",
