@@ -8,6 +8,7 @@ import discordIcon from "../Assets/discord-icon.svg";
 import tiktokIcon from "../Assets/tiktok.svg";
 import instagramIcon from "../Assets/instagram-logo.svg";
 import facebookIcon from "../Assets/facebook-logo.svg";
+import blueskyIcon from "../Assets/bluesky-icon.webp";
 
 const demoLinks = [
     {
@@ -51,6 +52,13 @@ const demoLinks = [
         id: "tiktok",
         text: "TikTok",
         title: "TikTok",
+    },
+    {
+        href: "https://bsky.app/profile/wildwesson.bsky.social",
+        icon: blueskyIcon,
+        id: "bluesky",
+        text: "Bluesky",
+        title: "Bluesky",
     },
     {
         href: "https://www.instagram.com/wildwessontv/",
