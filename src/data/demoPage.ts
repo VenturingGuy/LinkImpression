@@ -8,7 +8,7 @@ import discordIcon from "../Assets/discord-icon.svg";
 import tiktokIcon from "../Assets/tiktok.svg";
 import instagramIcon from "../Assets/instagram-logo.svg";
 import facebookIcon from "../Assets/facebook-logo.svg";
-import blueskyIcon from "../Assets/bluesky-icon.webp";
+import blueskyIcon from "../Assets/bluesky-logo.webp";
 
 const demoLinks = [
     {
