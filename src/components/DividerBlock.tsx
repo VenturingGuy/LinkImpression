@@ -3,7 +3,7 @@ import type { DividerBlock } from "../types/block";
 
 export default function DividerBlock(block: DividerBlock): ReactElement {
     return (
-        <div className="divider">
+        <div className="divider" id={block.id}>
             <hr />
         </div>
     )
