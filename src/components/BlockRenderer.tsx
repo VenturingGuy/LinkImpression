@@ -3,9 +3,9 @@ import HeaderBlock from "./Header/HeaderBlock"
 import TextBlock from "./TextBlock"
 import DividerBlock from "./DividerBlock"
 import LinkBlock from "./Links/LinkBlock"
-import type { JSX } from "react/jsx-runtime"
+import type { ReactElement } from "react"
 
-export default function BlockRenderer(block: Block): JSX.Element {
+export default function BlockRenderer(block: Block): ReactElement {
   switch (block.blockType) {
     case "Header":
         return <HeaderBlock {...block} />
