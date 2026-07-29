@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    max-width: 80%;
     margin-top: 1rem;
 
     &__avatar {
@@ -37,6 +37,10 @@
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+            }
+            @media (max-width: 600px) {
+                width: 32px;
+                height: 32px;
             }
         }
     }

@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 540px;
+    width: min(540px, 100%);
 
     &__content {
         width: 80%;
