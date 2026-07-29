@@ -1,21 +1,35 @@
-name: Deploy to Neocities
+name: Build and Deploy React TS to Neocities
 on:
   push:
     branches:
-      - main 
+      - main # Change to 'master' if your primary branch uses that name
 
 concurrency:
   group: deploy-to-neocities
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20 # Installs Node to compile the TS code
+        cache: 'npm'     # Speeds up future builds by caching packages
+
+    - name: Install dependencies
+      run: npm ci        # Clean install of your package.json dependencies
+
+    - name: Build production site
+      run: npm run build # Compiles TS into the static build folder
 
     - name: Deploy to Neocities
-      uses: bcomnes/deploy-to-neocities@v1
+      uses: bcomnes/deploy-to-neocities@v3
       with:
         api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
-        cleanup: false # Set to true if you want GitHub to delete old Neocities files
+        cleanup: false # Set to true if you want GitHub to delete old files on Neocities
+        dist_dir: dist # CRITICAL: Change to 'build' if using Create React App instead of Vite
