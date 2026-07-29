@@ -6,7 +6,7 @@ type TemplateBlock = {
 }
 
 export type HeaderBlock = TemplateBlock & {
-    avatar?: HTMLImageElement
+    avatar?: HTMLImageElement | string
     blockType: "Header"
     headerLinks?: BlockLink[]
     subtitle?: string
