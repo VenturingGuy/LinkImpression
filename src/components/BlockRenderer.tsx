@@ -2,7 +2,7 @@ import type { Block } from "../types/block"
 import HeaderBlock from "./Header/HeaderBlock"
 import TextBlock from "./TextBlock"
 import DividerBlock from "./DividerBlock"
-import LinkBlock from "./LinkBlock"
+import LinkBlock from "./Links/LinkBlock"
 import type { JSX } from "react/jsx-runtime"
 
 export default function BlockRenderer(block: Block): JSX.Element {
