@@ -1,13 +1,13 @@
 import type { Page } from "../types/page";
-import giftalkGif from "../Assets/giftalk.gif";
-import throneIcon from "../Assets/throne_icon.png";
-import twitterIcon from "../Assets/social-twitter.svg";
-import twitchIcon from "../Assets/logo-twitch.svg";
-import youtubeIcon from "../Assets/youtube-icon.svg";
-import discordIcon from "../Assets/discord-icon.svg";
-import tiktokIcon from "../Assets/tiktok.svg";
-import instagramIcon from "../Assets/instagram-logo.svg";
-import facebookIcon from "../Assets/facebook-logo.svg";
+const giftalkGif = "/favicon.svg";
+const throneIcon = "/favicon.svg";
+const twitterIcon = "/favicon.svg";
+const twitchIcon = "/favicon.svg";
+const youtubeIcon = "/favicon.svg";
+const discordIcon = "/favicon.svg";
+const tiktokIcon = "/favicon.svg";
+const instagramIcon = "/favicon.svg";
+const facebookIcon = "/favicon.svg";
 
 const demoLinks = [
     {
